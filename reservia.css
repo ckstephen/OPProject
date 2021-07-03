@@ -1,0 +1,395 @@
+body
+{
+    margin: inherit;
+    padding: inherit;
+}
+
+body,
+p,
+a,
+ul,
+li 
+{
+  margin: 0;
+  margin-left: 1em;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+
+.header
+{ 
+    display: grid;
+    align-items: center; 
+    grid-template-columns: auto 1fr auto;
+}
+
+nav
+{
+    margin-top: 0px; 
+    padding-top:20px; 
+    width: 50%; 
+    
+}
+
+nav ul
+{
+    
+    list-style-type: none;
+}
+
+
+.signup
+{
+    color: #0065FC;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+.paragraphe
+{ 
+    line-height: 1px
+}
+
+.search
+{
+    height: 51px;
+    width: 210px;
+    padding-left: 13px;
+    border: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+.fa-map-marker-alt 
+{
+    padding: 16.5px 19px;
+    width: 20px;
+    background-color: #e5e2e267;
+    border: 1px solid #f2f2f2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.recherche
+{
+    height: 49.5px;
+    width: 110px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0065fc;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.recherche:hover
+{
+    color: #0065fc;
+    background-color: #deebff;
+    border: 1px solid #0065fc;
+    cursor: pointer;
+}
+
+.filtres
+{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+#filtres h2
+{
+    display: flex;
+    float: left;
+    margin-right: 3%;
+    line-height: 3;
+    font-size: 1.2rem;
+    width: 60px;
+}
+
+.diffilters
+{
+    display:flex;
+    align-items: center;
+    height:50px;
+    font-size: 15px;
+    font-weight:bolder;
+    border-radius: 25px;
+    border:2px solid #ccc;
+    cursor: pointer;
+    padding-right: 17px;
+    margin-top: 30px;
+    margin-right: 25px;
+    
+}
+
+.diffilters i 
+{
+  display:flex;
+  color: #0065fc;
+  background-color: #DEEBFF;
+  padding: 15px 11px;
+  border-radius: 100%;
+  height: 1.5rem;
+  min-width: 2.2rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: -4px;
+}
+
+.buttonRecherche
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+.information
+{
+    display: flex;
+    width: 92%;
+    margin-left: 10px;
+}
+
+.info
+{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 2rem 0;
+}
+
+.info div
+{
+    display: flex;
+}
+.icone
+{
+    padding: 10px 15px;
+    border: solid 2px #f2f2f2;
+    border-radius: 100%;
+    color: #0065FC;
+}
+
+/* herbergement */ 
+
+.firstline figure 
+{
+    width: 100%;
+    height: auto;
+    background-color:var(--lightBlue);
+    justify-content: center;
+    padding-bottom:20px; 
+}
+
+.firstline figcaption
+{
+    margin-left: 10px; 
+}
+
+.firstline img
+{
+    height: 7rem;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+
+}
+
+.hebergement 
+{
+    padding: 0.375rem;
+    height: 565px;
+    width: 800px;
+    border-radius: 1.25rem;
+    padding-right: 27px;
+    background-color: #f2f2f2;
+}
+
+.firstline
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin-left: 1em;
+}
+
+.populaire
+{
+    display: grid;
+    position: relative;
+    width: 340px;
+    height: 578px;
+    left: 107%;
+    bottom: 96%;
+    background-color: #f2f2f2;
+    border-radius: 15px;    
+}
+
+.firstline figure
+{
+    width: 222px;
+    background-color: white;
+    border-radius: 1em;
+    height: 170px;
+    margin: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 16px #0000002e;
+}
+
+.etoilehebergement:hover
+{
+    transform: scale(1.02);
+}
+
+.firstline h3
+{
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+.firstline ul 
+{ 
+    margin-top: 7px;
+}
+
+.hebergement ul
+{
+    list-style-type: none;
+}
+
+body
+{
+    margin-left: 2em;
+}
+
+.contenuhebergement p 
+{
+    margin-left: 0;
+    font-size: 13px;
+}
+
+.populaire h2
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 21px;
+}
+
+.contenuhebergement ul 
+{
+    display: inline-flex;
+    margin-left: 7px;
+    font-size: 14px;
+}
+
+.contenuhebergement li
+{
+    margin-left: 2px;
+}
+
+.hebergement h2
+{
+    margin-left: 22px;
+    font-size: 21px;
+    margin: 21px;
+}
+
+#afficher
+{
+    font-size: 16px;
+    font-weight: 710;
+    padding-left: 7px;
+}
+
+.lespopulaires
+{
+    margin-left: 25px;
+    margin-bottom: 19px;
+    width: 286px;
+    height: 130px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 0 16px #0000002e;
+    border-radius: 1em;
+
+    
+}
+
+.contenulespopulaires
+{
+    display: flex;
+    height: 145px;
+}
+
+
+.populaire img
+{
+    border-radius: 1rem 0 0 1rem;
+    max-height: 100%;
+    max-width: 100%;
+    width: 111px;
+    height: 118px;
+    object-fit: cover;
+    padding-top: 6px;
+    padding-left: 6px;
+}
+
+#img
+{
+    width: 139px;
+}
+
+article
+{
+    display: block;
+}
+
+.etoilehebergement[data-active="true"]
+{
+    color: #0065FC;
+} 
+
+.etoilehebergement[data-active="false"]
+{
+    color: #d9d9d9;
+}
+
+.captionpopulaires
+{
+    flex-direction: column;
+}
+
+/* ACTIVITE */
+
+#activite
+{
+    display: grid;
+}
+
+#activite figure
+{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 167px; 
+}
+
+.one
+{
+    grid-column: 1;
+    grid-row: 1;
+}
