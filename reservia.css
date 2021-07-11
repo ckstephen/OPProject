@@ -944,7 +944,125 @@ footer h3
     }
 }
 
-@media all and (min-width: 720px) and (max-width: 1024px) {
+@media all and (min-width: 521px) and (max-width: 720px) {
+    .header {
+        display: grid;
+        grid-template-columns: 164px 158px 220px 176px;
+    }
+
+    .signup {
+        margin-left: 18%;
+    }
+
+    main h1 {
+        font-size: 30px;
+    }
+
+    .filtres {
+        flex-wrap: wrap;
+    }
+
+    .lespopulaires {
+        width: 92%;
+    }
+
+    .lespopulaires img {
+        width: 37%;
+    }
+
+    #img {
+        width: 37%;
+    }
+
+    .hebergement {
+        display: grid;
+        background-color: white;
+        width: 100%;
+    }
+
+    .populaire {
+        display: grid;
+        position: inherit;
+        left: 0;
+        bottom: 0;
+        grid-row: 1;
+        width: 99%;
+
+    }
+
+    .firstline {
+        grid-template-columns: repeat(2,0fr);
+    }
+
+    .activite {
+        display: grid;
+        margin-bottom: 12%;
+        grid-template-columns: repeat(2,324px);
+        grid-template-rows: repeat(3, 214px);
+        grid-gap: 16px;
+    }
+
+    #activite {
+        display: block;
+        margin-top: 50em;
+    }
+
+    #activite img {
+        height: 77%;
+    }
+
+    .activite figure {
+        height: 89%;
+    }
+
+    .un {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .grande {
+        height: unset;
+    }
+
+    .columnac {
+        display: contents;
+    }
+
+    .deux {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .trois {
+        grid-row: 2;
+        grid-column: 2;
+        margin-top: 18px;
+    }
+
+    .quatre {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .cinq {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    .six {
+        grid-row: 3;
+        grid-column: 2;
+        margin-top: 10px;
+    }
+
+    .sfooter {
+        margin-right: 12%;
+    }
+
+}
+
+ 
+@media all and (min-width: 721px) and (max-width: 1024px) {
      
     .header {
         grid-template-columns: 11em 8em 15em 11em;
@@ -981,7 +1099,10 @@ footer h3
         grid-template-columns: repeat(2,47%);
         margin-left: 9px;
     }
-
+    
+    .grande img {
+        height: 75%;
+    }
     .hebergement {
         display: grid;
         height: 58%;
@@ -1040,10 +1161,6 @@ footer h3
     #activite figure {
         height: 100%;
     }
-
-    .activite img {
-        height: 74%;
-    }
     
     #activite { 
         display: block;
@@ -1067,6 +1184,10 @@ footer h3
     .trois {
         grid-row: 2;
         margin: 15px 0 0 0;
+    }
+
+    .trois h3 {
+        padding-top: 10px;
     }
 
     .quatre {
