@@ -35,7 +35,8 @@ li
 
 nav
 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 136px 88px;
     grid-column: 3;
     margin-top: 0px; 
     align-items: center;
@@ -66,7 +67,7 @@ nav li
     display: none;
 }
 
-nav li:hover
+.lienheader:hover
 {
     border-top: #0065FC solid 4px;
     padding-top: 48px;
@@ -641,11 +642,37 @@ footer h3
 
 /* Responsive */
 
-@media all and (min-width: 320px) and (max-width: 420px) {
+@media all and (max-width: 440px) {
+    .header {
+        display: grid;
+        width: 95%;
+        grid-template-rows: 59px 59px 2px;
+        grid-template-columns: 45%; 
+    }
+
+    .nav {
+        grid-template-columns: 54% 54%;
+        width: 13em;
+    }
+
+    nav ul {
+        padding-left: 13px;
+    }
+
+    .signup {
+        padding-left: 50%;
+    }
+    
+
+}
+
+@media all and (max-width: 520px) 
+
+{
     .header {
         display: grid;
         grid-template-rows: 59px 59px 2px;
-        grid-template-columns: 162px; 
+        grid-template-columns: 50%; 
     } 
     
     main {
@@ -665,23 +692,31 @@ footer h3
 
     .logo {
         padding: 0;
-        margin-left: 20px;
+        margin: 8px 24px 10px 24px;
     }
 
     .logo img {
         padding: 0;
-        width: 82%;
+        width: 56%;
     }
 
     .nav {
         display: grid;
-        grid-template-columns: 162px 155px;
-        width: 20em;
+        grid-template-columns: 78% 77%;
+        width: 22em;
         grid-row: 2;
         grid-column: 1;
     }
-
     
+    nav ul {
+        width: 200%;
+        padding-left: 52px;
+    }
+
+    nav li {
+        width: 50%;
+
+    }
     
     #mapmarker {
         display: flex;
@@ -727,13 +762,11 @@ footer h3
         grid-row: 1;
         grid-column: 2;
         align-items: center;
-        flex-direction: row-reverse;
-        padding-right: 18px;
+        padding-left: 58%;
     }
 
     .lienheader {
-        margin-left: 32px;
-        margin-right: 26px;
+        margin-left: 7%;
     }
     
     main h1 {
@@ -753,7 +786,7 @@ footer h3
     }
 
     .information {
-        font-size: smaller;
+        font-size: 14px;
         margin-left: 0;
     }
 
@@ -799,17 +832,18 @@ footer h3
     .firstline {
         grid-template-columns: 0%;
         margin-left: 22px;
+        width: 100%;
     }
 
     .firstline figure {
-        width: 270px;
+        width: 21rem;
         margin-bottom: -16px;
         height: 151px;
     }
 
     .populaire { 
         display: grid;
-        width: 320px;
+        width: 100%;
         height: 540px;
         left: 0;
         bottom: 0;
@@ -819,7 +853,7 @@ footer h3
     }
 
     #img {
-        width: 124px;
+        width: 40%;
     }
 
     .lespopulaires p {
@@ -836,12 +870,12 @@ footer h3
     }
 
     .lespopulaires {
-        width: 288px;
+        width: 92%;
         height: 133px;
         margin-left: 15px;
     }
-     
-    ;.contenuhebergement h2 {
+
+    .contenuhebergement h2 {
         font-size: 18px;
     }
     
@@ -858,7 +892,7 @@ footer h3
     #activite figure {
         height: 158px;
         margin: 21px 0px;
-        width: 290px;
+        width: 100%;
     }
 
     .activite {
@@ -877,6 +911,10 @@ footer h3
 
     .hebergement {
         display: grid;
+        width: 100%;
+        background-color: white;
+        height: unset;
+        padding-left: 0;
     }
     
     .lespopulaires h3 {
@@ -906,3 +944,278 @@ footer h3
     }
 }
 
+@media all and (min-width: 521px) and (max-width: 720px) {
+    .header {
+        display: grid;
+        grid-template-columns: 164px 158px 220px 176px;
+    }
+
+    .signup {
+        margin-left: 18%;
+    }
+
+    main h1 {
+        font-size: 30px;
+    }
+
+    .filtres {
+        flex-wrap: wrap;
+    }
+
+    .lespopulaires {
+        width: 92%;
+    }
+
+    .lespopulaires img {
+        width: 37%;
+    }
+
+    #img {
+        width: 37%;
+    }
+
+    .hebergement {
+        display: grid;
+        background-color: white;
+        width: 100%;
+    }
+
+    .populaire {
+        display: grid;
+        position: inherit;
+        left: 0;
+        bottom: 0;
+        grid-row: 1;
+        width: 99%;
+
+    }
+
+    .firstline {
+        grid-template-columns: repeat(2,0fr);
+    }
+
+    .activite {
+        display: grid;
+        margin-bottom: 12%;
+        grid-template-columns: repeat(2,324px);
+        grid-template-rows: repeat(3, 214px);
+        grid-gap: 16px;
+    }
+
+    #activite {
+        display: block;
+        margin-top: 50em;
+    }
+
+    #activite img {
+        height: 77%;
+    }
+
+    .activite figure {
+        height: 89%;
+    }
+
+    .un {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .grande {
+        height: unset;
+    }
+
+    .columnac {
+        display: contents;
+    }
+
+    .deux {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .trois {
+        grid-row: 2;
+        grid-column: 2;
+        margin-top: 18px;
+    }
+
+    .quatre {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .cinq {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    .six {
+        grid-row: 3;
+        grid-column: 2;
+        margin-top: 10px;
+    }
+
+    .sfooter {
+        margin-right: 12%;
+    }
+
+}
+
+ 
+@media all and (min-width: 721px) and (max-width: 1024px) {
+     
+    .header {
+        grid-template-columns: 11em 8em 15em 11em;
+    }
+
+    main h1 {
+        font-size: 31px;
+    }
+
+    .signup {
+        margin-left: 79px;
+    }
+
+    .paragraphe {
+        font-size: 18px;
+        line-height: 9px;
+        margin-left: 2px;
+    }
+
+    .filtres {
+        flex-wrap: wrap;
+    }
+
+    .information {
+        font-size: 18px;
+    }
+
+    .contenuhebergement {
+        display: grid;
+        grid-template-rows: 85Em 57em;
+    }
+
+    .firstline {
+        grid-template-columns: repeat(2,47%);
+        margin-left: 9px;
+    }
+    
+    .grande img {
+        height: 75%;
+    }
+    .hebergement {
+        display: grid;
+        height: 58%;
+        width: 52%;
+        background-color: white;
+
+    }
+
+    #afficher {
+        font-size: 20px;
+        margin-left: 14px;
+        margin-bottom: 9px;
+    }
+
+    .hebergement figure {
+        width: 286px;
+        height: 175px;
+        margin-left: 13px;
+    }
+
+    .hebergement h2 {
+        font-size: 25px;
+    }
+
+    .populaire {
+        position: unset;
+        grid-row: 1;
+        width: 100%;
+    }
+
+    .lespopulaires {
+        width: 91%;
+        height: 91%;
+    }
+
+    .populaire img {
+        width: 40%;
+        height: 97%;
+    }
+
+    #img {
+        width: 41%;
+    }
+
+    .contenuhebergement h3 {
+        font-size: 19px;
+    }
+
+    .activite {
+        display: grid;
+        grid-template-columns: 322px 322px;
+        grid-gap: 27px;
+        grid-template-rows: repeat(3,228px);
+    }
+
+    #activite figure {
+        height: 100%;
+    }
+    
+    #activite { 
+        display: block;
+        margin-left: 12px;
+        margin-top: 4em;
+    }
+
+    .columnac {
+        display: contents;
+    }
+
+    .un {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .deux {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .trois {
+        grid-row: 2;
+        margin: 15px 0 0 0;
+    }
+
+    .trois h3 {
+        padding-top: 10px;
+    }
+
+    .quatre {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .cinq {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    .six {
+        grid-row: 3;
+        grid-column: 2;
+        margin: 12px 0 0 0;
+
+    }
+
+    .marseille {
+        margin-top: 25px;
+        background-color: #f2f2f2;
+        border-radius: 1em;
+        width: 684px;
+        height: 98%;
+    }
+
+    .sfooter {
+        margin-right: 121px;
+    }
+}
